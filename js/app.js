@@ -45,15 +45,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-// Event listener para los selecct de búsqueda
+// Event listener para los select de búsqueda
 marca.addEventListener('change', e => {
     datosBusqueda.marca = e.target.value;
+
+    filtarAuto();
 
 
 });
 
 year.addEventListener('change', e => {
     datosBusqueda.year = e.target.value;
+
+    filtarAuto();
 
     
 });
@@ -112,4 +116,34 @@ function llenarSelect() {
     }
    
 
+}
+
+
+// Función que filtra en base a la búsqueda
+
+function filtarAuto() {
+    const resultado = autos.filter(filtrarMarca).filter(filtrarYear);
+
+    console.log(resultado);
+ 
+}
+
+function filtrarMarca(auto) {
+    const {marca} = datosBusqueda;
+  if (marca) {
+    return auto.marca === marca;
+  }
+
+  return auto;
+     
+}
+
+function filtrarYear(auto) {
+    const {year} = datosBusqueda;  
+  if (year) {
+    return auto.year === parseInt(year); // convierte a un número entero el valor de año que se recibe
+  }
+
+  return auto;
+     
 }
