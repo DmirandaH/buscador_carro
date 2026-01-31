@@ -7,6 +7,7 @@ const maximo = document.querySelector('#maximo');
 const puertas = document.querySelector('#puertas');
 const transmision = document.querySelector('#transmision');
 const color = document.querySelector('#color');
+const combustible = document.querySelector('#combustible');
 
 // Contenedor para los resultados
 const resultado = document.querySelector('#resultado');
@@ -16,7 +17,7 @@ const min = max - 10;
 
 
 
-// Gnerar un objeto con la busqueda
+// Generar un objeto con la busqueda
 const datosBusqueda = {
     marca: '',
     year: '',
@@ -24,10 +25,8 @@ const datosBusqueda = {
     maximo: '',
     puertas: '',
     transmision: '',
-    color: ''
-
-  
-
+    color: '',
+    combustible: ''
 
 }
 
@@ -90,6 +89,13 @@ color.addEventListener('change', e => {
     datosBusqueda.color = e.target.value;
 
     filtrarAuto();
+});
+
+
+combustible.addEventListener('change', e => {
+    datosBusqueda.combustible = e.target.value;
+
+    filtrarAuto();
 })
 
 
@@ -103,11 +109,11 @@ function mostrarAutos(autos) {
 
     autos.forEach( auto => {
 
-        const {marca, modelo, year, puertas, transmision, precio, color } = auto;
+        const {marca, modelo, year, puertas, transmision, precio, color, combustible } = auto;
         const autoHTML = document.createElement('p');
 
         autoHTML.textContent = ` 
-            ${marca} ${modelo} -${year} - ${puertas} - Transmisión: ${transmision} - Precio: ${precio} - Color: ${color}
+            ${marca} ${modelo} -${year} - ${puertas} - Transmisión: ${transmision} - Precio: ${precio} - Color: ${color} - combustible: ${combustible}
         
         
         `;
@@ -146,7 +152,7 @@ function llenarSelect() {
 // Función que filtra en base a la búsqueda
 
 function filtrarAuto() {
-    const resultado = autos.filter(filtrarMarca).filter(filtrarYear).filter(filtrarMinimo).filter(filtrarMaximo).filter(filtrarPuertas).filter(filtrarTransmision).filter(filtrarColor);
+    const resultado = autos.filter(filtrarMarca).filter(filtrarYear).filter(filtrarMinimo).filter(filtrarMaximo).filter(filtrarPuertas).filter(filtrarTransmision).filter(filtrarColor).filter(filtrarCombustible);
 
 
 
@@ -242,4 +248,14 @@ function filtrarColor(auto) {
     return auto;
 }
 
+
+function filtrarCombustible(auto) {
+    const {combustible} = datosBusqueda;
+    if (combustible) {
+        return auto.combustible === combustible;
+
+    }
+
+    return auto;
+}
 

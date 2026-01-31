@@ -6,7 +6,8 @@ const autos = [
 		precio: 30000,
 		puertas: 4,
 		color: 'Blanco',
-		transmision: 'automatico'
+		transmision: 'automatico',
+    combustible: 'Diesel'
 	},
 	{ 
         marca: 'Audi', 
@@ -15,7 +16,8 @@ const autos = [
         precio: 40000, 
         puertas: 4, 
         color: 'Negro', 
-        transmision: 'automatico' 
+        transmision: 'automatico',
+        combustible: 'Diesel'
     },
 	{
 		marca: 'Ford',
@@ -24,7 +26,8 @@ const autos = [
 		precio: 20000,
 		puertas: 2,
 		color: 'Blanco',
-		transmision: 'automatico'
+		transmision: 'automatico',
+    combustible: 'gasolina'
 	},
 	{ 
         marca: 'Audi', 
@@ -33,7 +36,8 @@ const autos = [
         precio: 35000, 
         puertas: 4, 
         color: 'Negro', 
-        transmision: 'automatico' 
+        transmision: 'automatico',
+        combustible: 'Diesel'
     },
 	{
 		marca: 'BMW',
@@ -42,7 +46,8 @@ const autos = [
 		precio: 70000,
 		puertas: 4,
 		color: 'Rojo',
-		transmision: 'automatico'
+		transmision: 'automatico',
+    combustible: 'gasolina'
 	},
 	{
 		marca: 'Mercedes Benz',
@@ -51,7 +56,8 @@ const autos = [
 		precio: 25000,
 		puertas: 4,
 		color: 'Blanco',
-		transmision: 'automatico'
+		transmision: 'automatico',
+    combustible: 'gas'
 	},
 	{
 		marca: 'Chevrolet',
@@ -60,7 +66,8 @@ const autos = [
 		precio: 60000,
 		puertas: 2,
 		color: 'Rojo',
-		transmision: 'manual'
+		transmision: 'manual',
+    combustible: 'Diesel'
 	},
 	{ 
         marca: 'Ford', 
@@ -69,7 +76,8 @@ const autos = [
         precio: 80000, 
         puertas: 2, 
         color: 'Rojo', 
-        transmision: 'manual' 
+        transmision: 'manual',
+        combustible: 'gasolina'
     },
 	{
 		marca: 'Dodge',
