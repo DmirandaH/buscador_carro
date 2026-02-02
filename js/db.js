@@ -7,7 +7,8 @@ const autos = [
 		puertas: 4,
 		color: 'Blanco',
 		transmision: 'automatico',
-    combustible: 'Diesel'
+    combustible: 'Diesel',
+    kilometraje: 0
 	},
 	{ 
         marca: 'Audi', 
@@ -17,7 +18,8 @@ const autos = [
         puertas: 4, 
         color: 'Negro', 
         transmision: 'automatico',
-        combustible: 'Diesel'
+        combustible: 'Diesel',
+        kilometraje: 2000
     },
 	{
 		marca: 'Ford',
@@ -27,7 +29,8 @@ const autos = [
 		puertas: 2,
 		color: 'Blanco',
 		transmision: 'automatico',
-    combustible: 'gasolina'
+    combustible: 'gasolina',
+    kilometraje: 3000
 	},
 	{ 
         marca: 'Audi', 
@@ -37,7 +40,8 @@ const autos = [
         puertas: 4, 
         color: 'Negro', 
         transmision: 'automatico',
-        combustible: 'Diesel'
+        combustible: 'Diesel',
+        kilometraje: 4000
     },
 	{
 		marca: 'BMW',
@@ -47,7 +51,8 @@ const autos = [
 		puertas: 4,
 		color: 'Rojo',
 		transmision: 'automatico',
-    combustible: 'gasolina'
+    combustible: 'gasolina',
+    kilometraje: 5000
 	},
 	{
 		marca: 'Mercedes Benz',
@@ -57,7 +62,8 @@ const autos = [
 		puertas: 4,
 		color: 'Blanco',
 		transmision: 'automatico',
-    combustible: 'gas'
+    combustible: 'gas',
+    kilometraje: 10000
 	},
 	{
 		marca: 'Chevrolet',
@@ -67,7 +73,8 @@ const autos = [
 		puertas: 2,
 		color: 'Rojo',
 		transmision: 'manual',
-    combustible: 'Diesel'
+    combustible: 'Diesel',
+    kilometraje: 15000
 	},
 	{ 
         marca: 'Ford', 
@@ -77,7 +84,8 @@ const autos = [
         puertas: 2, 
         color: 'Rojo', 
         transmision: 'manual',
-        combustible: 'gasolina'
+        combustible: 'gasolina',
+        kilometraje: 0
     },
 	{
 		marca: 'Dodge',
@@ -87,7 +95,8 @@ const autos = [
 		puertas: 4,
 		color: 'Blanco',
 		transmision: 'automatico',
-    combustible: 'gas'
+    combustible: 'gas',
+    kilometraje: 2000
 	},
 	{ 
         marca: 'Audi', 
@@ -97,7 +106,9 @@ const autos = [
         puertas: 2, 
         color: 'Negro', 
         transmision: 'manual',
-        combustible: 'diesel'
+        combustible: 'diesel',
+        kilometraje: 3000
+
 
     },
 	{
@@ -108,7 +119,8 @@ const autos = [
 		puertas: 2,
 		color: 'Rojo',
 		transmision: 'manual',
-     combustible: 'gasolina'
+    combustible: 'gasolina',
+    kilometraje: 4000
 	},
 	{
 		marca: 'Mercedes Benz',
@@ -118,7 +130,8 @@ const autos = [
 		puertas: 4,
 		color: 'Azul',
 		transmision: 'automatico',
-     combustible: 'gas'
+    combustible: 'gas',
+    kilometraje: 5000
 	},
 	{
 		marca: 'BMW',
@@ -128,7 +141,8 @@ const autos = [
 		puertas: 4,
 		color: 'Blanco',
 		transmision: 'automatico',
-    combustible: 'diesel'
+    combustible: 'diesel',
+    kilometraje: 10000
 	},
 	{ 
         marca: 'Ford', 
@@ -138,7 +152,8 @@ const autos = [
         puertas: 2, 
         color: 'Negro', 
         transmision: 'manual',
-        combustible: 'gasolina'
+        combustible: 'gasolina',
+        kilometraje: 15000
     },
 	{
 		marca: 'Dodge',
@@ -148,7 +163,8 @@ const autos = [
 		puertas: 2,
 		color: 'Azul',
 		transmision: 'automatico',
-    combustible: 'gas'
+    combustible: 'gas',
+    kilometraje: 20000
 	},
 	{
 		marca: 'BMW',
@@ -158,7 +174,8 @@ const autos = [
 		puertas: 4,
 		color: 'Blanco',
 		transmision: 'automatico',
-    combustible: 'gasolina'
+    combustible: 'gasolina',
+    kilometraje: 0
 	},
 	{
 		marca: 'BMW',
@@ -168,7 +185,8 @@ const autos = [
 		puertas: 4,
 		color: 'Negro',
 		transmision: 'automatico',
-    combustible: 'diesel'
+    combustible: 'diesel',
+    kilometraje: 2000
 	},
 	{
 		marca: 'Mercedes Benz',
@@ -178,7 +196,8 @@ const autos = [
 		puertas: 4,
 		color: 'Blanco',
 		transmision: 'automatico',
-    combustible: 'gas'
+    combustible: 'gas',
+    kilometraje: 3000
 	},
 	{ 
         marca: 'Audi', 
@@ -188,7 +207,8 @@ const autos = [
         puertas: 4, 
         color: 'Azul', 
         transmision: 'automatico',
-        combustible: 'gas'
+        combustible: 'gas',
+        kilometraje: 4000
     },
 
 
@@ -200,7 +220,8 @@ const autos = [
     puertas: 4,
     color: 'Blanco',
     transmision: 'manual',
-    combustible: 'diesel'
+    combustible: 'diesel',
+    kilometraje: 5000
   },
   {
     marca: 'Chevrolet',
@@ -210,7 +231,8 @@ const autos = [
     puertas: 4,
     color: 'Gris',
     transmision: 'manual',
-    combustible: 'gasolina'
+    combustible: 'gasolina',
+    kilometraje: 10000
   },
   {
     marca: 'Nissan',
@@ -220,7 +242,8 @@ const autos = [
     puertas: 4,
     color: 'Azul',
     transmision: 'automática',
-    combustible: 'gas'
+    combustible: 'gas',
+    kilometraje: 15000
   },
   {
     marca: 'Kia',
@@ -230,7 +253,9 @@ const autos = [
     puertas: 5,
     color: 'Rojo',
     transmision: 'automática',
-    combustible: 'gasolina'
+    combustible: 'gasolina',
+    kilometraje: 20000
+
 
   },
   {
@@ -241,7 +266,8 @@ const autos = [
     puertas: 5,
     color: 'Negro',
     transmision: 'automática',
-    combustible: 'gas'
+    combustible: 'gas',
+    kilometraje: 0
   },
   {
     marca: 'Mazda',
@@ -251,7 +277,8 @@ const autos = [
     puertas: 5,
     color: 'Negro',
     transmision: 'automática',
-    combustible: 'gasolina'
+    combustible: 'gasolina',
+    kilometraje: 2000
   },
   {
     marca: 'Volkswagen',
@@ -261,7 +288,8 @@ const autos = [
     puertas: 5,
     color: 'Blanco',
     transmision: 'automática',
-    combustible: 'gas'
+    combustible: 'gas',
+    kilometraje: 3000
   },
   {
     marca: 'Honda',
@@ -271,7 +299,8 @@ const autos = [
     puertas: 5,
     color: 'Gris',
     transmision: 'automática',
-    combustible: 'diesel'
+    combustible: 'diesel',
+    kilometraje: 4000
   },
   {
     marca: 'Ford',
@@ -281,7 +310,8 @@ const autos = [
     puertas: 5,
     color: 'Negro',
     transmision: 'automática',
-    combustible: 'gasolina'
+    combustible: 'gasolina',
+    kilometraje: 5000
   },
   {
     marca: 'BMW',
@@ -291,7 +321,8 @@ const autos = [
     puertas: 4,
     color: 'Azul',
     transmision: 'automática',
-    combustible: 'gas'
+    combustible: 'gas',
+    kilometraje: 10000
   },
   {
     marca: 'Ford',
@@ -301,7 +332,8 @@ const autos = [
     puertas: 2,
     color: 'Rojo',
     transmision: 'manual',
-    combustible: 'diesel'
+    combustible: 'diesel',
+    kilometraje: 15000
   },
 
   {
@@ -312,7 +344,8 @@ const autos = [
   puertas: 4,
   color: 'Blanco',
   transmision: 'manual',
-  combustible: 'gasolina'
+  combustible: 'gasolina',
+  kilometraje: 20000
 },
 {
   marca: 'Chevrolet',
@@ -322,7 +355,8 @@ const autos = [
   puertas: 4,
   color: 'Gris',
   transmision: 'manual',
-  combustible: 'gas'
+  combustible: 'gas',
+  kilometraje: 0
 },
 {
   marca: 'Nissan',
@@ -332,7 +366,8 @@ const autos = [
   puertas: 4,
   color: 'Azul',
   transmision: 'manual',
-  combustible: 'gasolina'
+  combustible: 'gasolina',
+  kilometraje: 2000
 },
 {
   marca: 'Ford',
@@ -342,7 +377,8 @@ const autos = [
   puertas: 4,
   color: 'Negro',
   transmision: 'automática',
-  combustible: 'diesel'
+  combustible: 'diesel',
+  kilometraje: 3000
 },
 {
   marca: 'Hyundai',
@@ -352,7 +388,8 @@ const autos = [
   puertas: 4,
   color: 'Plata',
   transmision: 'automática',
-  combustible: 'gas'
+  combustible: 'gas',
+  kilometraje: 4000
 },
 {
   marca: 'Kia',
@@ -362,7 +399,8 @@ const autos = [
   puertas: 4,
   color: 'Rojo',
   transmision: 'manual',
-  combustible: 'gasolina'
+  combustible: 'gasolina',
+  kilometraje: 5000
 },
 {
   marca: 'Mazda',
@@ -372,7 +410,8 @@ const autos = [
   puertas: 4,
   color: 'Blanco',
   transmision: 'automática',
-  combustible: 'gas'
+  combustible: 'gas',
+  kilometraje: 10000
 },
 {
   marca: 'Volkswagen',
@@ -382,7 +421,8 @@ const autos = [
   puertas: 4,
   color: 'Gris',
   transmision: 'manual',
-  combustible: 'gasolina'
+  combustible: 'gasolina',
+  kilometraje: 15000
 },
 {
   marca: 'Renault',
@@ -392,7 +432,8 @@ const autos = [
   puertas: 4,
   color: 'Azul',
   transmision: 'manual',
-  combustible: 'gas'
+  combustible: 'gas',
+  kilometraje: 20000
 },
 {
   marca: 'Peugeot',
@@ -402,7 +443,8 @@ const autos = [
   puertas: 4,
   color: 'Negro',
   transmision: 'automática',
-  combustible: 'diesel'
+  combustible: 'diesel',
+  kilometraje: 0
 },
 
 /* ===== 2017 ===== */
@@ -414,7 +456,8 @@ const autos = [
   puertas: 4,
   color: 'Gris',
   transmision: 'automática',
-  combustible: 'gas'
+  combustible: 'gas',
+  kilometraje: 2000
 },
 {
   marca: 'Chevrolet',
@@ -424,7 +467,8 @@ const autos = [
   puertas: 4,
   color: 'Negro',
   transmision: 'automática',
-  combustible: 'gasolina'
+  combustible: 'gasolina',
+  kilometraje: 3000
 },
 {
   marca: 'Nissan',
@@ -434,7 +478,8 @@ const autos = [
   puertas: 4,
   color: 'Blanco',
   transmision: 'manual',
-  combustible: 'gas'
+  combustible: 'gas',
+  kilometraje: 4000
 
 
 },
@@ -446,7 +491,8 @@ const autos = [
   puertas: 4,
   color: 'Azul',
   transmision: 'automática',
-  combustible: 'gasolina'
+  combustible: 'gasolina',
+  kilometraje: 5000
 },
 {
   marca: 'Hyundai',
@@ -456,7 +502,8 @@ const autos = [
   puertas: 4,
   color: 'Plata',
   transmision: 'automática',
-  combustible: 'gas'
+  combustible: 'gas',
+  kilometraje: 10000
 },
 {
   marca: 'Kia',
@@ -466,7 +513,8 @@ const autos = [
   puertas: 4,
   color: 'Rojo',
   transmision: 'automática',
-  combustible: 'gasolina'
+  combustible: 'gasolina',
+  kilometraje: 15000
 },
 {
   marca: 'Mazda',
@@ -476,7 +524,8 @@ const autos = [
   puertas: 4,
   color: 'Negro',
   transmision: 'automática',
-  combustible: 'gas'
+  combustible: 'gas',
+  kilometraje: 20000
 },
 {
   marca: 'Volkswagen',
@@ -486,7 +535,8 @@ const autos = [
   puertas: 4,
   color: 'Blanco',
   transmision: 'automática',
-  combustible: 'diesel'
+  combustible: 'diesel',
+  kilometraje: 0
 },
 {
   marca: 'Honda',
@@ -496,7 +546,8 @@ const autos = [
   puertas: 4,
   color: 'Gris',
   transmision: 'manual',
-  combustible: 'gasolina'
+  combustible: 'gasolina',
+  kilometraje: 2000
 },
 {
   marca: 'Subaru',
@@ -506,7 +557,8 @@ const autos = [
   puertas: 4,
   color: 'Azul',
   transmision: 'manual',
-  combustible: 'gas'
+  combustible: 'gas',
+  kilometraje: 3000 
 },
 
 ];

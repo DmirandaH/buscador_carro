@@ -8,6 +8,8 @@ const puertas = document.querySelector('#puertas');
 const transmision = document.querySelector('#transmision');
 const color = document.querySelector('#color');
 const combustible = document.querySelector('#combustible');
+const kilometrajeMin = document.querySelector('#kilometrajeMin');
+const kilometrajeMax = document.querySelector('#kilometrajeMax');
 
 // Contenedor para los resultados
 const resultado = document.querySelector('#resultado');
@@ -26,7 +28,9 @@ const datosBusqueda = {
     puertas: '',
     transmision: '',
     color: '',
-    combustible: ''
+    combustible: '',
+    kilometrajeMin: '',
+    kilometrajeMax: ''
 
 }
 
@@ -96,7 +100,21 @@ combustible.addEventListener('change', e => {
     datosBusqueda.combustible = e.target.value;
 
     filtrarAuto();
-})
+});
+
+kilometrajeMin.addEventListener('change', e => {
+    datosBusqueda.kilometrajeMin = parseInt(e.target.value);
+
+    filtrarAuto();
+});
+
+kilometrajeMax.addEventListener('change', e => {
+    datosBusqueda.kilometrajeMax = parseInt(e.target.value);
+
+    filtrarAuto();
+});
+
+
 
 
 
@@ -107,13 +125,13 @@ function mostrarAutos(autos) {
 
     limpiarHTML(); //Elimina el HTML previo
 
-    autos.forEach( auto => {
+    autos.forEach( auto => { 
 
-        const {marca, modelo, year, puertas, transmision, precio, color, combustible } = auto;
+        const {marca, modelo, year, puertas, transmision, precio, color, combustible,kilometraje } = auto;
         const autoHTML = document.createElement('p');
 
         autoHTML.textContent = ` 
-            ${marca} ${modelo} -${year} - ${puertas} - Transmisión: ${transmision} - Precio: ${precio} - Color: ${color} - combustible: ${combustible}
+            ${marca} ${modelo} -${year} - ${puertas} - Transmisión: ${transmision} - Precio: ${precio} - Color: ${color} - Combustible: ${combustible} - Kilometraje: ${kilometraje} km
         
         
         `;
@@ -152,7 +170,7 @@ function llenarSelect() {
 // Función que filtra en base a la búsqueda
 
 function filtrarAuto() {
-    const resultado = autos.filter(filtrarMarca).filter(filtrarYear).filter(filtrarMinimo).filter(filtrarMaximo).filter(filtrarPuertas).filter(filtrarTransmision).filter(filtrarColor).filter(filtrarCombustible);
+    const resultado = autos.filter(filtrarMarca).filter(filtrarYear).filter(filtrarMinimo).filter(filtrarMaximo).filter(filtrarPuertas).filter(filtrarTransmision).filter(filtrarColor).filter(filtrarCombustible).filter(filtrarKilometrajeMin).filter(filtrarKilometrajeMax);
 
 
 
@@ -188,7 +206,7 @@ function filtrarMarca(auto) {
 function filtrarYear(auto) {
     const {year} = datosBusqueda;  
   if (year) {
-    return auto.year === year; // convierte a un número entero el valor de año que se recibe en string 
+    return auto.year === year;
   }
 
   return auto;
@@ -259,3 +277,47 @@ function filtrarCombustible(auto) {
     return auto;
 }
 
+
+
+function filtrarKilometrajeMin(auto) {
+    const {kilometrajeMin} = datosBusqueda;
+    if (kilometrajeMin) {
+        return auto.kilometraje >= kilometrajeMin;
+
+    }
+
+    return auto;
+}
+
+
+function filtrarKilometrajeMax (auto) {
+    const {kilometrajeMax} = datosBusqueda;
+    if (kilometrajeMax) {
+        return auto.kilometraje <= kilometrajeMax;
+    }
+     return auto;
+}
+
+
+
+// agregar estas dos nuevas opciones al proyecto : Kilometraje -  Estado del vehículo
+
+
+/* 2. Kilometraje
+
+Muy usado en marketplaces reales.
+
+0 – 20.000 km
+
+20.000 – 50.000 km
+
+50.000 – 100.000 km
+
++100.000 km */
+
+
+
+/*4. Estado del vehículo
+Nuevo
+Usado
+Certificado */
