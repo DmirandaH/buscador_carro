@@ -10,6 +10,7 @@ const color = document.querySelector('#color');
 const combustible = document.querySelector('#combustible');
 const kilometrajeMin = document.querySelector('#kilometrajeMin');
 const kilometrajeMax = document.querySelector('#kilometrajeMax');
+const estadoVehiculo = document.querySelector('#estadovehiculo');
 
 // Contenedor para los resultados
 const resultado = document.querySelector('#resultado');
@@ -30,7 +31,8 @@ const datosBusqueda = {
     color: '',
     combustible: '',
     kilometrajeMin: '',
-    kilometrajeMax: ''
+    kilometrajeMax: '',
+    estadovehiculo: ''
 
 }
 
@@ -114,6 +116,13 @@ kilometrajeMax.addEventListener('change', e => {
     filtrarAuto();
 });
 
+estadovehiculo.addEventListener ('change', e => {
+    datosBusqueda.estadovehiculo = e.target.value;
+
+
+    filtrarAuto();
+});
+
 
 
 
@@ -131,7 +140,7 @@ function mostrarAutos(autos) {
         const autoHTML = document.createElement('p');
 
         autoHTML.textContent = ` 
-            ${marca} ${modelo} -${year} - ${puertas} - Transmisión: ${transmision} - Precio: ${precio} - Color: ${color} - Combustible: ${combustible} - Kilometraje: ${kilometraje} km
+            ${marca} ${modelo} -${year} - ${puertas} - Transmisión: ${transmision} - Precio: ${precio} - Color: ${color} - Combustible: ${combustible} - Kilometraje: ${kilometraje} km -Estado del Vehículo: ${estadovehiculo}
         
         
         `;
@@ -170,7 +179,7 @@ function llenarSelect() {
 // Función que filtra en base a la búsqueda
 
 function filtrarAuto() {
-    const resultado = autos.filter(filtrarMarca).filter(filtrarYear).filter(filtrarMinimo).filter(filtrarMaximo).filter(filtrarPuertas).filter(filtrarTransmision).filter(filtrarColor).filter(filtrarCombustible).filter(filtrarKilometrajeMin).filter(filtrarKilometrajeMax);
+    const resultado = autos.filter(filtrarMarca).filter(filtrarYear).filter(filtrarMinimo).filter(filtrarMaximo).filter(filtrarPuertas).filter(filtrarTransmision).filter(filtrarColor).filter(filtrarCombustible).filter(filtrarKilometrajeMin).filter(filtrarKilometrajeMax).filter(filtrarestadoVehiculo);
 
 
 
@@ -296,6 +305,16 @@ function filtrarKilometrajeMax (auto) {
         return auto.kilometraje <= kilometrajeMax;
     }
      return auto;
+}
+
+
+function filtrarestadoVehiculo (datos) {
+    const {estadoVehiculo} = datosBusqueda;
+    if(estadoVehiculo) {
+        return auto.estadoVehiculo === estadoVehiculo;
+    }
+
+    return auto;
 }
 
 
