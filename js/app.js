@@ -32,7 +32,7 @@ const datosBusqueda = {
     combustible: '',
     kilometrajeMin: '',
     kilometrajeMax: '',
-    estadovehiculo: ''
+    estadoVehiculo: ''
 
 }
 
@@ -116,8 +116,8 @@ kilometrajeMax.addEventListener('change', e => {
     filtrarAuto();
 });
 
-estadovehiculo.addEventListener ('change', e => {
-    datosBusqueda.estadovehiculo = e.target.value;
+estadoVehiculo.addEventListener ('change', e => {
+    datosBusqueda.estadoVehiculo = e.target.value;
 
 
     filtrarAuto();
@@ -136,11 +136,11 @@ function mostrarAutos(autos) {
 
     autos.forEach( auto => { 
 
-        const {marca, modelo, year, puertas, transmision, precio, color, combustible,kilometraje } = auto;
+        const {marca, modelo, year, puertas, transmision, precio, color, combustible,kilometraje, estadoVehiculo } = auto;
         const autoHTML = document.createElement('p');
 
         autoHTML.textContent = ` 
-            ${marca} ${modelo} -${year} - ${puertas} - Transmisión: ${transmision} - Precio: ${precio} - Color: ${color} - Combustible: ${combustible} - Kilometraje: ${kilometraje} km -Estado del Vehículo: ${estadovehiculo}
+            ${marca} ${modelo} -${year} - ${puertas} - Transmisión: ${transmision} - Precio: ${precio} - Color: ${color} - Combustible: ${combustible} - Kilometraje: ${kilometraje} km -Estado del Vehículo: ${estadoVehiculo}
         
         
         `;
@@ -308,7 +308,7 @@ function filtrarKilometrajeMax (auto) {
 }
 
 
-function filtrarestadoVehiculo (datos) {
+function filtrarestadoVehiculo (auto) {
     const {estadoVehiculo} = datosBusqueda;
     if(estadoVehiculo) {
         return auto.estadoVehiculo === estadoVehiculo;

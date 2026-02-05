@@ -8,7 +8,8 @@ const autos = [
 		color: 'Blanco',
 		transmision: 'automatico',
     combustible: 'Diesel',
-    kilometraje: 0
+    kilometraje: 0,
+    estadoVehiculo: 'nuevo'
 	},
 	{ 
         marca: 'Audi', 
@@ -19,7 +20,8 @@ const autos = [
         color: 'Negro', 
         transmision: 'automatico',
         combustible: 'Diesel',
-        kilometraje: 2000
+        kilometraje: 2000, 
+        estadoVehiculo: 'nuevo'
     },
 	{
 		marca: 'Ford',
@@ -30,7 +32,8 @@ const autos = [
 		color: 'Blanco',
 		transmision: 'automatico',
     combustible: 'gasolina',
-    kilometraje: 3000
+    kilometraje: 3000,
+    estadoVehiculo: 'nuevo'
 	},
 	{ 
         marca: 'Audi', 
@@ -41,7 +44,8 @@ const autos = [
         color: 'Negro', 
         transmision: 'automatico',
         combustible: 'Diesel',
-        kilometraje: 4000
+        kilometraje: 4000,
+        estadoVehiculo: 'usado'
     },
 	{
 		marca: 'BMW',
@@ -52,7 +56,8 @@ const autos = [
 		color: 'Rojo',
 		transmision: 'automatico',
     combustible: 'gasolina',
-    kilometraje: 5000
+    kilometraje: 5000,
+    estadoVehiculo: 'certificado'
 	},
 	{
 		marca: 'Mercedes Benz',
@@ -63,7 +68,8 @@ const autos = [
 		color: 'Blanco',
 		transmision: 'automatico',
     combustible: 'gas',
-    kilometraje: 10000
+    kilometraje: 10000,
+    estadoVehiculo: 'usado'
 	},
 	{
 		marca: 'Chevrolet',
@@ -74,7 +80,8 @@ const autos = [
 		color: 'Rojo',
 		transmision: 'manual',
     combustible: 'Diesel',
-    kilometraje: 15000
+    kilometraje: 15000,
+    estadoVehiculo: 'usado'
 	},
 	{ 
         marca: 'Ford', 
@@ -85,7 +92,8 @@ const autos = [
         color: 'Rojo', 
         transmision: 'manual',
         combustible: 'gasolina',
-        kilometraje: 0
+        kilometraje: 0,
+        estadoVehiculo: 'certificado'
     },
 	{
 		marca: 'Dodge',
@@ -96,7 +104,8 @@ const autos = [
 		color: 'Blanco',
 		transmision: 'automatico',
     combustible: 'gas',
-    kilometraje: 2000
+    kilometraje: 2000,
+    estadoVehiculo: 'nuevo'
 	},
 	{ 
         marca: 'Audi', 
@@ -107,7 +116,8 @@ const autos = [
         color: 'Negro', 
         transmision: 'manual',
         combustible: 'diesel',
-        kilometraje: 3000
+        kilometraje: 3000,
+        estadoVehiculo: 'nuevo'
 
 
     },
@@ -120,7 +130,9 @@ const autos = [
 		color: 'Rojo',
 		transmision: 'manual',
     combustible: 'gasolina',
-    kilometraje: 4000
+    kilometraje: 4000,
+    estadoVehiculo: 'certificado'
+
 	},
 	{
 		marca: 'Mercedes Benz',
@@ -131,7 +143,8 @@ const autos = [
 		color: 'Azul',
 		transmision: 'automatico',
     combustible: 'gas',
-    kilometraje: 5000
+    kilometraje: 5000, 
+    estadoVehiculo: 'usado'
 	},
 	{
 		marca: 'BMW',
@@ -142,7 +155,8 @@ const autos = [
 		color: 'Blanco',
 		transmision: 'automatico',
     combustible: 'diesel',
-    kilometraje: 10000
+    kilometraje: 10000,
+    estadoVehiculo: 'certificado'
 	},
 	{ 
         marca: 'Ford', 
@@ -153,7 +167,8 @@ const autos = [
         color: 'Negro', 
         transmision: 'manual',
         combustible: 'gasolina',
-        kilometraje: 15000
+        kilometraje: 15000,
+        estadoVehiculo: 'usado'
     },
 	{
 		marca: 'Dodge',
@@ -164,7 +179,8 @@ const autos = [
 		color: 'Azul',
 		transmision: 'automatico',
     combustible: 'gas',
-    kilometraje: 20000
+    kilometraje: 20000,
+    estadoVehiculo: 'certificado'
 	},
 	{
 		marca: 'BMW',
@@ -175,7 +191,8 @@ const autos = [
 		color: 'Blanco',
 		transmision: 'automatico',
     combustible: 'gasolina',
-    kilometraje: 0
+    kilometraje: 0,
+    estadoVehiculo: 'nuevo'
 	},
 	{
 		marca: 'BMW',
@@ -186,7 +203,8 @@ const autos = [
 		color: 'Negro',
 		transmision: 'automatico',
     combustible: 'diesel',
-    kilometraje: 2000
+    kilometraje: 2000,
+    estadoVehiculo: 'certificado'
 	},
 	{
 		marca: 'Mercedes Benz',
@@ -197,7 +215,8 @@ const autos = [
 		color: 'Blanco',
 		transmision: 'automatico',
     combustible: 'gas',
-    kilometraje: 3000
+    kilometraje: 3000,
+    estadoVehiculo: 'nuevo'
 	},
 	{ 
         marca: 'Audi', 
@@ -208,7 +227,8 @@ const autos = [
         color: 'Azul', 
         transmision: 'automatico',
         combustible: 'gas',
-        kilometraje: 4000
+        kilometraje: 4000,
+        estadoVehiculo: 'certificado'
     },
 
 
@@ -221,7 +241,8 @@ const autos = [
     color: 'Blanco',
     transmision: 'manual',
     combustible: 'diesel',
-    kilometraje: 5000
+    kilometraje: 5000,
+    estadoVehiculo: 'usado'
   },
   {
     marca: 'Chevrolet',
@@ -232,7 +253,8 @@ const autos = [
     color: 'Gris',
     transmision: 'manual',
     combustible: 'gasolina',
-    kilometraje: 10000
+    kilometraje: 10000,
+    estadoVehiculo: 'usado'
   },
   {
     marca: 'Nissan',
@@ -243,7 +265,8 @@ const autos = [
     color: 'Azul',
     transmision: 'automática',
     combustible: 'gas',
-    kilometraje: 15000
+    kilometraje: 15000,
+    estadoVehiculo: 'certificado'
   },
   {
     marca: 'Kia',
@@ -254,7 +277,8 @@ const autos = [
     color: 'Rojo',
     transmision: 'automática',
     combustible: 'gasolina',
-    kilometraje: 20000
+    kilometraje: 20000,
+    estadoVehiculo: 'usado'
 
 
   },
@@ -267,7 +291,8 @@ const autos = [
     color: 'Negro',
     transmision: 'automática',
     combustible: 'gas',
-    kilometraje: 0
+    kilometraje: 0,
+    estadoVehiculo: 'nuevo'
   },
   {
     marca: 'Mazda',
@@ -278,7 +303,8 @@ const autos = [
     color: 'Negro',
     transmision: 'automática',
     combustible: 'gasolina',
-    kilometraje: 2000
+    kilometraje: 2000,
+    estadoVehiculo: 'certificado'
   },
   {
     marca: 'Volkswagen',
@@ -289,7 +315,8 @@ const autos = [
     color: 'Blanco',
     transmision: 'automática',
     combustible: 'gas',
-    kilometraje: 3000
+    kilometraje: 3000,
+    estadoVehiculo: 'usado'
   },
   {
     marca: 'Honda',
@@ -300,7 +327,8 @@ const autos = [
     color: 'Gris',
     transmision: 'automática',
     combustible: 'diesel',
-    kilometraje: 4000
+    kilometraje: 4000,
+    estadoVehiculo: 'usado'
   },
   {
     marca: 'Ford',
@@ -311,7 +339,8 @@ const autos = [
     color: 'Negro',
     transmision: 'automática',
     combustible: 'gasolina',
-    kilometraje: 5000
+    kilometraje: 5000,
+    estadoVehiculo: 'certificado'
   },
   {
     marca: 'BMW',
@@ -322,7 +351,8 @@ const autos = [
     color: 'Azul',
     transmision: 'automática',
     combustible: 'gas',
-    kilometraje: 10000
+    kilometraje: 10000,
+    estadoVehiculo: 'usado'
   },
   {
     marca: 'Ford',
@@ -333,7 +363,8 @@ const autos = [
     color: 'Rojo',
     transmision: 'manual',
     combustible: 'diesel',
-    kilometraje: 15000
+    kilometraje: 15000,
+    estadoVehiculo: 'usado'
   },
 
   {
@@ -345,7 +376,8 @@ const autos = [
   color: 'Blanco',
   transmision: 'manual',
   combustible: 'gasolina',
-  kilometraje: 20000
+  kilometraje: 20000, 
+  estadoVehiculo: 'certificado'
 },
 {
   marca: 'Chevrolet',
@@ -356,7 +388,8 @@ const autos = [
   color: 'Gris',
   transmision: 'manual',
   combustible: 'gas',
-  kilometraje: 0
+  kilometraje: 0,
+  estadoVehiculo: 'nuevo'
 },
 {
   marca: 'Nissan',
@@ -367,7 +400,8 @@ const autos = [
   color: 'Azul',
   transmision: 'manual',
   combustible: 'gasolina',
-  kilometraje: 2000
+  kilometraje: 2000,
+  estadoVehiculo: 'certificado'
 },
 {
   marca: 'Ford',
@@ -378,7 +412,8 @@ const autos = [
   color: 'Negro',
   transmision: 'automática',
   combustible: 'diesel',
-  kilometraje: 3000
+  kilometraje: 3000, 
+  estadoVehiculo: 'certificado'
 },
 {
   marca: 'Hyundai',
@@ -389,7 +424,8 @@ const autos = [
   color: 'Plata',
   transmision: 'automática',
   combustible: 'gas',
-  kilometraje: 4000
+  kilometraje: 4000,
+  estadoVehiculo: 'usado'
 },
 {
   marca: 'Kia',
@@ -400,7 +436,8 @@ const autos = [
   color: 'Rojo',
   transmision: 'manual',
   combustible: 'gasolina',
-  kilometraje: 5000
+  kilometraje: 5000,
+  estadoVehiculo: 'usado'
 },
 {
   marca: 'Mazda',
@@ -411,7 +448,8 @@ const autos = [
   color: 'Blanco',
   transmision: 'automática',
   combustible: 'gas',
-  kilometraje: 10000
+  kilometraje: 10000,
+  estadoVehiculo: 'certificado'
 },
 {
   marca: 'Volkswagen',
@@ -422,7 +460,8 @@ const autos = [
   color: 'Gris',
   transmision: 'manual',
   combustible: 'gasolina',
-  kilometraje: 15000
+  kilometraje: 15000,
+  estadoVehiculo: 'usado'
 },
 {
   marca: 'Renault',
@@ -433,7 +472,7 @@ const autos = [
   color: 'Azul',
   transmision: 'manual',
   combustible: 'gas',
-  kilometraje: 20000
+  kilometraje: 20000, 
 },
 {
   marca: 'Peugeot',
@@ -444,7 +483,8 @@ const autos = [
   color: 'Negro',
   transmision: 'automática',
   combustible: 'diesel',
-  kilometraje: 0
+  kilometraje: 0,
+   estadoVehiculo: 'certificado'
 },
 
 /* ===== 2017 ===== */
@@ -457,7 +497,8 @@ const autos = [
   color: 'Gris',
   transmision: 'automática',
   combustible: 'gas',
-  kilometraje: 2000
+  kilometraje: 2000,
+   estadoVehiculo: 'certificado'
 },
 {
   marca: 'Chevrolet',
@@ -468,7 +509,8 @@ const autos = [
   color: 'Negro',
   transmision: 'automática',
   combustible: 'gasolina',
-  kilometraje: 3000
+  kilometraje: 3000,
+   estadoVehiculo: 'usado'
 },
 {
   marca: 'Nissan',
@@ -479,7 +521,8 @@ const autos = [
   color: 'Blanco',
   transmision: 'manual',
   combustible: 'gas',
-  kilometraje: 4000
+  kilometraje: 4000,
+   estadoVehiculo: 'usado'
 
 
 },
@@ -492,7 +535,8 @@ const autos = [
   color: 'Azul',
   transmision: 'automática',
   combustible: 'gasolina',
-  kilometraje: 5000
+  kilometraje: 5000,
+   estadoVehiculo: 'certificado'
 },
 {
   marca: 'Hyundai',
@@ -503,7 +547,8 @@ const autos = [
   color: 'Plata',
   transmision: 'automática',
   combustible: 'gas',
-  kilometraje: 10000
+  kilometraje: 10000,
+  estadoVehiculo: 'usado'
 },
 {
   marca: 'Kia',
@@ -514,7 +559,8 @@ const autos = [
   color: 'Rojo',
   transmision: 'automática',
   combustible: 'gasolina',
-  kilometraje: 15000
+  kilometraje: 15000,
+  estadoVehiculo: 'usado'
 },
 {
   marca: 'Mazda',
@@ -525,7 +571,8 @@ const autos = [
   color: 'Negro',
   transmision: 'automática',
   combustible: 'gas',
-  kilometraje: 20000
+  kilometraje: 20000,
+   estadoVehiculo: 'certificado'
 },
 {
   marca: 'Volkswagen',
@@ -536,7 +583,8 @@ const autos = [
   color: 'Blanco',
   transmision: 'automática',
   combustible: 'diesel',
-  kilometraje: 0
+  kilometraje: 0,
+   estadoVehiculo: 'nuevo'
 },
 {
   marca: 'Honda',
@@ -547,7 +595,8 @@ const autos = [
   color: 'Gris',
   transmision: 'manual',
   combustible: 'gasolina',
-  kilometraje: 2000
+  kilometraje: 2000,
+   estadoVehiculo: 'certificado'
 },
 {
   marca: 'Subaru',
@@ -558,7 +607,8 @@ const autos = [
   color: 'Azul',
   transmision: 'manual',
   combustible: 'gas',
-  kilometraje: 3000 
+  kilometraje: 3000,
+   estadoVehiculo: 'usado'
 },
 
 ];
